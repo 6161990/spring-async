@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AsyncController {
 
-    private AsyncService asyncService;
+    private final AsyncService asyncService;
 
     @GetMapping("/1")
     public String asyncCall1(){
